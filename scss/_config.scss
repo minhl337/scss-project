@@ -7,3 +7,12 @@ $dark-color: #333;
 $medium-color: #ccc;
 // THE LOCATION IS BASED OFF BEING IN THE CSS FILE
 $bg-img: url('../img/showcase.jpg');
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
