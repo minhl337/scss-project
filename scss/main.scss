@@ -39,6 +39,7 @@ img {
   height: 70px;
   color: white;
   text-transform: uppercase;
+  text-align: center;
 }
 
 // Main Nav
@@ -366,3 +367,6 @@ img {
     }
   }
 }
+
+// Media Queries
+@import './media';
