@@ -44,28 +44,44 @@
         <h2 class="section-title">Contact Me</h2>
         <div class="bottom-line"></div>
         <p class="lead">Ways to Reach Me</p>
-        <form></form>
+        <form
+          method="post"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        ></form>
         <div class="text-fields">
-          <input type="text" class="text-input name-input" placeholder="Name" />
+          <input
+            type="text"
+            class="text-input name-input"
+            placeholder="Name"
+            name="name"
+          />
           <input
             type="text"
             class="text-input subject-input"
             placeholder="Subject"
+            name="subject"
           />
           <input
             type="email"
             class="text-input email-input"
             placeholder="Email"
+            name="email"
           />
           <input
             type="text"
             class="text-input phone-input"
             placeholder="Phone"
+            name="phone"
           />
           <textarea
             class="text-input message-input"
             placeholder="Your Message..."
+            name="message"
           ></textarea>
+        </div>
+        <div class="my-2">
+          <div data-netlify-recaptcha="true"></div>
         </div>
         <button type="submit" class="btn-dark">Submit</button>
       </div>
